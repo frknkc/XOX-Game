@@ -17,7 +17,6 @@ namespace lab4
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = "20201032";
             buttons = new List<Button>() { btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9 };
         }
         public void SetDisable()
@@ -316,18 +315,16 @@ namespace lab4
         }
         private void FinishGame(int score)
         {
-            string whowin = "x";
-            textBox1.BackColor = Color.White;
             if (score == 0) {
                 MessageBox.Show(this, "DRAW", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 whowin = "draw";
             }
             else if (score == 10) {
-                MessageBox.Show(this, "O WON", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Computer WIN", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 whowin = "o";
             }
             else
-                MessageBox.Show(this, "X WON", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "You WIN", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
            
             SetDisable();
             }
