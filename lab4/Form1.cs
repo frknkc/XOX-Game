@@ -317,11 +317,9 @@ namespace lab4
         {
             if (score == 0) {
                 MessageBox.Show(this, "DRAW", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                whowin = "draw";
             }
             else if (score == 10) {
                 MessageBox.Show(this, "Computer WIN", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                whowin = "o";
             }
             else
                 MessageBox.Show(this, "You WIN", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
