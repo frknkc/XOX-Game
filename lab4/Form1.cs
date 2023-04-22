@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using testScript;
 namespace lab4
 {
     public partial class Form1 : Form
@@ -344,10 +343,7 @@ namespace lab4
                 MessageBox.Show(this, "X WON", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
            
             SetDisable();
-            testClass tst = new testClass();
-            label1.Text += Convert.ToString(tst.testFuncXoX(textBox1.Text, whowin, array[0], array[1], array[2], array[3], array[4], array[5], array[6], array[7], array[8]));
-            //label1.Text += Convert.ToString(tst.testFuncXoX(textBox1.Text, whowin, btn_1.Text, btn_2.Text, btn_3.Text, btn_4.Text, btn_5.Text, btn_6.Text, btn_7.Text, btn_8.Text, btn_9.Text));
-        }
+            }
     
     private void btn_reset_Click(object sender, EventArgs e)
         {
