@@ -38,7 +38,6 @@ namespace lab4
             this.btn_7 = new System.Windows.Forms.Button();
             this.btn_8 = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_reset = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -142,16 +141,6 @@ namespace lab4
             this.btn_9.UseVisualStyleBackColor = true;
             this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(35, 29);
-            this.textBox1.MaxLength = 8;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Student Number";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // btn_reset
             // 
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -166,10 +155,10 @@ namespace lab4
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("PMingLiU-ExtB", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 61);
+            this.label2.Font = new System.Drawing.Font("Ravie", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 19);
+            this.label2.Size = new System.Drawing.Size(265, 43);
             this.label2.TabIndex = 12;
             this.label2.Text = "X-O-X Game";
             // 
@@ -181,7 +170,6 @@ namespace lab4
             this.ClientSize = new System.Drawing.Size(330, 428);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_reset);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_9);
             this.Controls.Add(this.btn_8);
             this.Controls.Add(this.btn_7);
@@ -194,7 +182,7 @@ namespace lab4
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OOPII-Lab4";
+            this.Text = "X-O-X ";
             this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,7 +200,6 @@ namespace lab4
         private System.Windows.Forms.Button btn_7;
         private System.Windows.Forms.Button btn_8;
         private System.Windows.Forms.Button btn_9;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Label label2;
     }

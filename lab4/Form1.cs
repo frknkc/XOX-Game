@@ -28,20 +28,7 @@ namespace lab4
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string metin = textBox1.Text;
-
-            for (int i = 0; i < metin.Length; i++)
-            {
-                if (!Char.IsDigit(metin[i]))
-                {
-                    textBox1.BackColor = Color.Red;
-                    MessageBox.Show("(Please enter only integers, 8 digits, example: 20230001", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox1.Text = "";
-                }
-            }
-        }
+      
         public static string[]  array = new string[9];
         
         public static int endgame(string[] arr)
